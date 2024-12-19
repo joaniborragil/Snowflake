@@ -1,0 +1,22 @@
+ Koch Snowflake
+
+ Description
+The Koch Snowflake is a fractal that starts with an equilateral triangle. In each recursive iteration:
+1. Each line segment is divided into **three equal parts**.
+2. The middle part is replaced with two segments that form an equilateral "bump," creating a smaller triangle pointing outward.
+3. The original segment is effectively split into **four segments**, maintaining the same length as the original.
+
+As the recursion proceeds, the number of line segments grows exponentially, and the shape becomes increasingly detailed.
+
+The Recursive Steps
+At each level of recursion:
+1. Divide a line segment into three equal parts.
+2. Rotate and create a new equilateral triangle using the middle segment:
+   - Translate the "middle point" upward to form the peak.
+   - Rotate the segments to form the new triangle shape.
+3. Fill in the middle with two new segments to complete the "bump."
+
+In other words:
+- A line segment is replaced with four smaller line segments.
+- This is done recursively for every new line segment produced.
+
